@@ -28,6 +28,7 @@ contract OraclePriceFeeds {
     }
     
     //srcToken contains weth
+    //Dec:8
     function getPriceTokenToUsdt(address srcTokenAddress) public view returns(uint256,uint256){
         address feedAddress = feedAddressManager[srcTokenAddress];
         if(feedAddress == address(0)){
@@ -43,5 +44,4 @@ contract OraclePriceFeeds {
         )   = priceFeed.latestRoundData();
         return (10,answer);
     }
-
 }
