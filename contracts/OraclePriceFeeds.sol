@@ -24,23 +24,23 @@ contract OraclePriceFeeds {
     function setFeedAddressManager(address tokenAddress,address feedAddress) public onlyOwner{
        require(tokenAddress != address(0),"setFeedAddressManager tokenAddress error .");
        require(feedAddress != address(0),"setFeedAddressManager feedAddress error .");
-       feedAddressManager[tokenAddress] = feedAddress;
+       feedsManager[tokenAddress] = feedAddress;
     }
     
     //srcToken contains weth
     //Dec:8
-    function getPriceTokenToUsdt(address srcTokenAddress) public view returns(uint256,uint256){
-        address feedAddress = feedAddressManager[srcTokenAddress];
+    function getPriceTokenToUsdt(address srcTokenAddress) public view returns(uint256,int256){
+        address feedAddress = feedsManager[srcTokenAddress];
         if(feedAddress == address(0)){
             return(0,0);
         }
         AggregatorV3Interface priceFeed = AggregatorV3Interface(feedAddress);
         (
-            uint80 roundId,
+            ,
             int256 answer,
-            uint256 startedAt,
-            uint256 updatedAt,
-            uint80 answeredInRound
+            ,
+            ,
+            
         )   = priceFeed.latestRoundData();
         return (10,answer);
     }
