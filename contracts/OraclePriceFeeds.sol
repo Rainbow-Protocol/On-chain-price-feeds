@@ -3,7 +3,7 @@ pragma solidity >=0.8.0;
 import "./SafeMath.sol";
 import "./AggregatorV3Interface.sol";
 
-
+// SPDX-License-Identifier: MIT
 contract OraclePriceFeeds {
 
     using SafeMath for uint256;
@@ -12,7 +12,7 @@ contract OraclePriceFeeds {
     //token == token-usdt
     mapping(address => address) public feedsManager;
     
-    constructor() public {
+    constructor() {
         owner = msg.sender;
     }
     
