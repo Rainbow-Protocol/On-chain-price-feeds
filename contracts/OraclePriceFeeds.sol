@@ -1,4 +1,4 @@
-pragma solidity >=0.8.0;
+pragma solidity 0.6.0;
 
 import "./SafeMath.sol";
 import "./AggregatorV3Interface.sol";
@@ -12,7 +12,7 @@ contract OraclePriceFeeds {
     //token == token-usdt
     mapping(address => address) public feedsManager;
     
-    constructor() {
+    constructor() public {
         owner = msg.sender;
     }
     

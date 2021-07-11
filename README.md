@@ -3,7 +3,7 @@ This protocol can be used for online price reading. the underlying data is from 
 
 Rinkeby:
 
-    contract:0x056714d0CEFF574c52fe83423Bf32deC6af6F338
+    contract:0x71E36b9eE399219aba2BDAE6DB59A62f7e37F9fc
 
     Support test token:
         Btc:0x321F8BA41A50c12895C7c147ca3f7615B2ADDc32
