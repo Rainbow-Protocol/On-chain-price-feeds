@@ -1,13 +1,13 @@
 # OraclePriceFeeds
-This protocol can be used for online price reading. the underlying data is from ChainLink, and third-party projects can integrate this protocol. users can query authentication. if questions, you can contact the author: apply@rainbow-webs.com
+This protocol can be used for online price reading. the underlying data is from ChainLink, and third-party projects can integrate this protocol. users can query authentication. if questions, you can contact the author: admin@rainbows.finance
 
 Rinkeby:
 
-    contract:0x417E495A9A4015fF74De3590d5A6DECC812E179E
+    contract:0x51Ef6971B5806F1CAa17e78D417B91aCaD93e4b6 ,[this ABI file](/abi/oraclePrice_abi.json)
 
     Support test token:
-        Btc:0x321F8BA41A50c12895C7c147ca3f7615B2ADDc32
-        WETH:0x5afb8292C4b885A96C733869380d2925da7cdB5a
+        WBTC:0x19b765139035a4706f436B5062b4998f4f065768
+        WETH:0xe0224e38421DcF3B6e034041088470e16a53C71C
 
     Notes:
         If you need to test the token, please leave a address.
